@@ -29,20 +29,40 @@ ul { margin:8px 0; padding-left:22px; }
 li { margin:4px 0; }
 a { color:var(--ember); }
 footer { margin-top:48px; padding-top:18px; border-top:1px solid var(--rule);
-         color:var(--muted); font-size:13px; }</style>
+         color:var(--muted); font-size:13px; }
+/* home / landing */
+.hero { padding:44px 0 4px; }
+.tagline { color:var(--ember); font-weight:700; letter-spacing:.08em;
+           text-transform:uppercase; font-size:13px; }
+.lead { font-size:18px; color:var(--muted); max-width:62ch; }
+section h2 { font-size:22px; margin:40px 0 14px; color:#fff; }
+.steps { counter-reset:step; margin:8px 0; padding:0; list-style:none; }
+.steps li { counter-increment:step; position:relative; padding:12px 0 12px 46px;
+            border-bottom:1px solid var(--rule); }
+.steps li:last-child { border-bottom:0; }
+.steps li::before { content:counter(step); position:absolute; left:0; top:10px;
+  width:30px; height:30px; display:grid; place-items:center; border-radius:50%;
+  background:var(--ember); color:#1a1020; font-weight:700; }
+.steps b { color:#fff; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+        gap:16px; margin:14px 0; }
+.card { background:var(--panel); border:1px solid var(--rule);
+        border-radius:14px; padding:18px; }
+.card h3 { margin:0 0 6px; color:var(--ember); font-size:16px; }
+.card p { margin:0; color:var(--muted); font-size:14px; }</style>
 </head>
 <body>
 <div class="wrap">
 <header>
   <div class="brand">Living Tales</div>
-  <nav><a href="datenschutz.html">Datenschutz</a><a href="impressum.html" aria-current="page">Impressum</a><a href="nutzungsbedingungen.html">Nutzungsbedingungen</a><a href="loeschung.html">Datenlöschung</a><a class="lang" href="imprint.html">EN</a></nav>
+  <nav><a href="index.html">Start</a><a href="datenschutz.html">Datenschutz</a><a href="impressum.html" aria-current="page">Impressum</a><a href="nutzungsbedingungen.html">Nutzungsbedingungen</a><a href="loeschung.html">Datenlöschung</a><a class="lang" href="imprint.html">EN</a></nav>
 </header>
 <main>
 <h1>Impressum</h1>
 <h3>Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG):</h3>
 <p>Jan van Cleve<br>Auer Höhe 21<br>45219 Essen<br>Deutschland</p>
 <h3>Kontakt:</h3>
-<p>E-Mail: <a href="mailto:vanclevejan@gmail.com">vanclevejan@gmail.com</a></p>
+<p>E-Mail: <a href="mailto:livingtalesapp@gmail.com">livingtalesapp@gmail.com</a></p>
 <h3>Verantwortlich für den Inhalt gemäß § 18 Abs. 2 MStV:</h3>
 <p>Jan van Cleve<br>Auer Höhe 21<br>45219 Essen</p>
 <h3>Verbraucherstreitbeilegung / Universalschlichtungsstelle:</h3>
