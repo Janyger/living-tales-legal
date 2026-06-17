@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Privacy Policy — Living Tales</title>
+<style>:root { --bg:#0d0b14; --panel:#15121f; --ink:#ece7f2; --muted:#9a90ad;
+        --ember:#ff7a45; --ember-dim:#c9572b; --rule:#2a2438; }
+* { box-sizing:border-box; }
+body { margin:0; background:radial-gradient(120% 80% at 50% -10%, #1c1730 0%, var(--bg) 60%);
+       color:var(--ink); font:16px/1.7 -apple-system,Segoe UI,Roboto,sans-serif;
+       padding:0 20px 80px; }
+.wrap { max-width:760px; margin:0 auto; }
+header { padding:40px 0 8px; }
+.brand { color:var(--ember); font-weight:700; letter-spacing:.04em;
+         text-transform:uppercase; font-size:13px; }
+nav { margin:18px 0 28px; display:flex; flex-wrap:wrap; gap:8px 18px;
+      border-bottom:1px solid var(--rule); padding-bottom:18px; }
+nav a { color:var(--muted); text-decoration:none; font-size:14px; }
+nav a:hover, nav a[aria-current] { color:var(--ember); }
+.lang { margin-left:auto; font-size:13px; }
+h1 { font-size:30px; line-height:1.2; margin:8px 0 4px; }
+h2 { font-size:20px; margin:34px 0 8px; color:#fff; }
+h3 { font-size:16px; margin:22px 0 6px; color:var(--ember); font-weight:600; }
+p { margin:10px 0; color:var(--ink); }
+.meta { color:var(--muted); font-size:14px; margin-top:0; }
+ul { margin:8px 0; padding-left:22px; }
+li { margin:4px 0; }
+a { color:var(--ember); }
+footer { margin-top:48px; padding-top:18px; border-top:1px solid var(--rule);
+         color:var(--muted); font-size:13px; }</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand">Living Tales</div>
+  <nav><a href="privacy.html" aria-current="page">Privacy</a><a href="imprint.html">Imprint</a><a href="terms.html">Terms</a><a class="lang" href="datenschutz.html">DE</a></nav>
+</header>
+<main>
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated: June 2026</p>
+<p>This policy explains how personal data is processed when using the app &quot;Living Tales&quot;, in accordance with the EU General Data Protection Regulation (GDPR).</p>
+<h2>1. Controller</h2>
+<p>The controller within the meaning of Art. 4 (7) GDPR is the entity named in the Legal Notice. Contact details are stated there.</p>
+<h2>2. Core principle: local first, &quot;bring your own key&quot;</h2>
+<p>Living Tales is designed to be data-minimising. There is no obligation to register; there is no classic user account with a name or password. In standard operation you store your own keys for the AI providers you choose. These keys are stored exclusively in encrypted form on your device (Android Keystore) and are not transmitted to anyone other than the respective provider. Generated text and audio files are stored locally on the device; they leave the device only if you share or export them yourself.</p>
+<h2>3. Processing activities in detail</h2>
+<h3>3.1 Content generation with your own keys</h3>
+<ul><li>Data processed: your inputs (world description, settings, prompts) as well as the existing story state, as far as needed for generation.</li><li>Purpose: providing the generation you requested (text, voice, cover).</li><li>Recipients: the provider you choose (e.g. Google Gemini/Cloud TTS, DeepSeek, MiniMax, or a server you configure yourself).</li><li>Legal basis: Art. 6 (1)(b) GDPR (performance of pre-contractual or contractual measures at your request).</li></ul>
+<h3>3.2 Local storage</h3>
+<ul><li>Data processed: API keys (encrypted), app settings, generated chapters, audio files, cover images, library/progress data.</li><li>Purpose: app functionality (playback, continuation, management).</li><li>Legal basis: Art. 6 (1)(b) GDPR. Storage takes place on the device only; no transfer to us occurs in this context.</li></ul>
+<h3>3.3 Premium mode (optional)</h3>
+<ul><li>How it works: in premium mode, provider calls are routed through our server service (&quot;LT-Proxy&quot;), which holds the provider keys. For this, your device receives a random, anonymous identifier via Firebase Authentication (anonymous sign-in) — without name, email, or login. Firebase App Check is used to prevent abuse. Automated content moderation may take place to comply with legal and contractual limits.</li><li>Data processed: anonymous device/installation identifier, usage and quota counters, the text to be generated or voiced, technical connection data (e.g. IP address when contacting the server).</li><li>Recipients: the respective providers (see section 4) and our infrastructure provider (Google Cloud / Firebase).</li><li>Legal basis: Art. 6 (1)(b) GDPR (provision of the premium service) and Art. 6 (1)(f) GDPR (legitimate interest in fraud and abuse prevention).</li><li>Premium request by email: an email address is transmitted only if you yourself actively trigger a premium-unlock request by email. We process it solely to handle your request (Art. 6 (1)(b) GDPR).</li></ul>
+<h3>3.4 Analytics and crash reports (only with consent)</h3>
+<ul><li>Services: Firebase Analytics (usage statistics) and Firebase Crashlytics (crash/error reports) provided by Google Ireland Ltd.</li><li>Purpose: stability and improvement of the app.</li><li>Legal basis: Art. 6 (1)(a) GDPR (consent). You grant it separately and voluntarily during onboarding; without consent these services are not activated. You can withdraw consent at any time with future effect in the settings.</li></ul>
+<h3>3.5 App permissions</h3>
+<p>The app requires internet access (for generation/premium) and, optionally, the notification permission (generation progress). These permissions serve only the stated purposes.</p>
+<h2>4. Recipients and third parties</h2>
+<p>Depending on use, the following may be involved, among others:</p>
+<ul><li>Google Ireland Ltd. / Google LLC (Firebase Authentication, App Check, Remote Config, Analytics, Crashlytics; Gemini, Google Cloud Text-to-Speech),</li><li>DeepSeek (text generation),</li><li>MiniMax / Hailuo (speech synthesis),</li><li>where applicable, a provider/server you configure yourself.</li></ul>
+<p>These process the transmitted data as independent controllers or as processors under their own privacy policies.</p>
+<h2>5. Transfers to third countries</h2>
+<p>Some providers (in particular Google, DeepSeek, MiniMax) may process data outside the EU/EEA, including in the USA or other third countries. Where no adequacy decision exists, the transfer is based on appropriate safeguards within the meaning of Art. 46 GDPR (e.g. EU standard contractual clauses) or on your explicit request for the service (Art. 49 (1)(b) GDPR).</p>
+<h2>6. Retention period</h2>
+<p>Local content and keys remain stored until you delete them in the app or by uninstalling. Anonymous premium identifiers and associated usage counters are stored as long as necessary for premium operation and abuse prevention. Analytics data is processed according to the respective service&#x27;s retention periods.</p>
+<h2>7. Your rights</h2>
+<p>Under the GDPR you have the right to access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20), and to object (Art. 21). You can withdraw any consent given at any time with future effect (Art. 7 (3) GDPR). A message to the contact address stated in the Legal Notice is sufficient to exercise these rights.</p>
+<h2>8. Right to lodge a complaint</h2>
+<p>Without prejudice to any other remedy, you have the right to lodge a complaint with a data protection supervisory authority (Art. 77 GDPR), in particular in the member state of your residence.</p>
+<h2>9. No automated decision with legal effect</h2>
+<p>There is no solely automated decision producing legal effects concerning you (Art. 22 GDPR). AI generation takes place at your request and produces no such legal effect.</p>
+<h2>10. Minors</h2>
+<p>The app is not directed at children. Adult content is accessible only after a corresponding selection; please observe the age limits.</p>
+<h2>11. Changes to this policy</h2>
+<p>We adapt this policy when the processing or the legal situation changes. The current version can always be viewed in the app.</p>
+</main>
+<footer>Living Tales · interaktiver LitRPG-Hörbuch-Generator</footer>
+</div>
+</body>
+</html>
