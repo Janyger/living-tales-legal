@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Open-Source Licenses — Living Tales</title>
+<style>:root { --bg:#0d0b14; --panel:#15121f; --ink:#ece7f2; --muted:#9a90ad;
+        --ember:#ff7a45; --ember-dim:#c9572b; --rule:#2a2438; }
+* { box-sizing:border-box; }
+body { margin:0; background:radial-gradient(120% 80% at 50% -10%, #1c1730 0%, var(--bg) 60%);
+       color:var(--ink); font:16px/1.7 -apple-system,Segoe UI,Roboto,sans-serif;
+       padding:0 20px 80px; }
+.wrap { max-width:760px; margin:0 auto; }
+header { padding:40px 0 8px; }
+.brand { color:var(--ember); font-weight:700; letter-spacing:.04em;
+         text-transform:uppercase; font-size:13px; }
+nav { margin:18px 0 28px; display:flex; flex-wrap:wrap; gap:8px 18px;
+      border-bottom:1px solid var(--rule); padding-bottom:18px; }
+nav a { color:var(--muted); text-decoration:none; font-size:14px; }
+nav a:hover, nav a[aria-current] { color:var(--ember); }
+.lang { margin-left:auto; font-size:13px; }
+h1 { font-size:30px; line-height:1.2; margin:8px 0 4px; }
+h2 { font-size:20px; margin:34px 0 8px; color:#fff; }
+h3 { font-size:16px; margin:22px 0 6px; color:var(--ember); font-weight:600; }
+p { margin:10px 0; color:var(--ink); }
+.meta { color:var(--muted); font-size:14px; margin-top:0; }
+ul { margin:8px 0; padding-left:22px; }
+li { margin:4px 0; }
+a { color:var(--ember); }
+footer { margin-top:48px; padding-top:18px; border-top:1px solid var(--rule);
+         color:var(--muted); font-size:13px; }
+/* home / landing */
+.hero { padding:44px 0 4px; }
+.tagline { color:var(--ember); font-weight:700; letter-spacing:.08em;
+           text-transform:uppercase; font-size:13px; }
+.lead { font-size:18px; color:var(--muted); max-width:62ch; }
+section h2 { font-size:22px; margin:40px 0 14px; color:#fff; }
+.steps { counter-reset:step; margin:8px 0; padding:0; list-style:none; }
+.steps li { counter-increment:step; position:relative; padding:12px 0 12px 46px;
+            border-bottom:1px solid var(--rule); }
+.steps li:last-child { border-bottom:0; }
+.steps li::before { content:counter(step); position:absolute; left:0; top:10px;
+  width:30px; height:30px; display:grid; place-items:center; border-radius:50%;
+  background:var(--ember); color:#1a1020; font-weight:700; }
+.steps b { color:#fff; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+        gap:16px; margin:14px 0; }
+.card { background:var(--panel); border:1px solid var(--rule);
+        border-radius:14px; padding:18px; }
+.card h3 { margin:0 0 6px; color:var(--ember); font-size:16px; }
+.card p { margin:0; color:var(--muted); font-size:14px; }
+.why { background:linear-gradient(135deg,#1f1533,#14101e);
+       border:1px solid var(--ember-dim); border-radius:16px; padding:24px 24px 18px;
+       margin:34px 0; }
+.why h2 { margin:0 0 8px; }
+.why .lead { color:var(--ink); max-width:none; font-size:17px; }
+.why ul { list-style:none; padding:0; margin:14px 0 0; }
+.why li { position:relative; padding:8px 0 8px 30px; color:var(--muted); border:0; }
+.why li::before { content:"✓"; position:absolute; left:0; top:8px;
+       color:var(--ember); font-weight:700; }
+.why li b { color:#fff; }</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand">Living Tales</div>
+  <nav><a href="home-en.html">Home</a><a href="privacy.html">Privacy</a><a href="imprint.html">Imprint</a><a href="terms.html">Terms</a><a href="deletion.html">Data deletion</a><a href="licenses.html" aria-current="page">Open-Source Licenses</a><a class="lang" href="lizenzen.html">DE</a></nav>
+</header>
+<main>
+<h1>Open-Source Licenses</h1>
+<p>Living Tales can run optional AI models directly on your device – a consistency guard and offline narration. These models and the underlying libraries come from open-source projects. We thank their authors and credit them here together with their licenses.</p>
+<p>— On-device guard (optional consistency check) —</p>
+<p>GLiNER · model &quot;gliner_multi-v2.1&quot;<br>Urchade Zaratiana et al. · Apache License 2.0<br><a href="https://huggingface.co/urchade/gliner_multi-v2.1">https://huggingface.co/urchade/gliner_multi-v2.1</a></p>
+<p>mDeBERTa-v3 NLI · model &quot;mDeBERTa-v3-base-xnli-multilingual-nli-2mil7&quot; Moritz Laurer · MIT License<br><a href="https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7">https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7</a></p>
+<p>mDeBERTa-v3-base (base model)<br>Microsoft · MIT License<br><a href="https://huggingface.co/microsoft/mdeberta-v3-base">https://huggingface.co/microsoft/mdeberta-v3-base</a></p>
+<p>ONNX Runtime (execution runtime)<br>Microsoft · MIT License<br><a href="https://github.com/microsoft/onnxruntime">https://github.com/microsoft/onnxruntime</a></p>
+<p>SentencePiece (tokenizer)<br>Google · Apache License 2.0<br><a href="https://github.com/google/sentencepiece">https://github.com/google/sentencepiece</a></p>
+<p>— On-device narration (text-to-speech) —</p>
+<p>Supertonic 3<br>Supertone Inc. · model license: OpenRAIL-M · sample code: MIT License OpenRAIL-M permits commercial use subject to the responsible-use restrictions stated therein.</p>
+<p>sherpa-onnx (TTS runtime)<br>k2-fsa · Apache License 2.0<br><a href="https://github.com/k2-fsa/sherpa-onnx">https://github.com/k2-fsa/sherpa-onnx</a></p>
+<p>The full license texts are available at the sources listed above. Apache License 2.0: <a href="https://www.apache.org/licenses/LICENSE-2.0">https://www.apache.org/licenses/LICENSE-2.0</a> OpenRAIL-M: see the respective model source.<br>The full MIT license text follows below.</p>
+<p>—— MIT License ——</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+</main>
+<footer>Living Tales · your own audiobook generator</footer>
+</div>
+</body>
+</html>
